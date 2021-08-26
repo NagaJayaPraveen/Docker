@@ -9,7 +9,7 @@ node('master')
            {
 sh '''
  
-mv image5 ~/
-docker build -t image5:1.0 .'''
+mv image5 ~/DockerFiles
+cd DockerFiles &&  docker build -t image5:1.0 .'''
            }
      }

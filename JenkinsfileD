@@ -2,7 +2,8 @@ node('master')
      {
     stage('continuous download')
            {
-              git branch: 'main', url: 'https://github.com/NagaJayaPraveen/Docker.git'
+              git branch: 'main', url: 'https://github.com/NagaJayaPraveen/Docker.git'/root/DockerFiles
+
            }
 
     stage('continuous build')

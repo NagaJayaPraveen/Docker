@@ -8,9 +8,9 @@ node('master')
 
     stage('continuous build')
            {
-sh '''
+           sh '''
  
-mv image5 ~/DockerFiles
-cd DockerFiles &&  docker build -t image5:1.0 .'''
+  docker build -t image5:1.0 .'''
+
            }
      }

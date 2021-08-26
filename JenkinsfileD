@@ -7,7 +7,7 @@ node('master')
 
     stage('continuous build')
            {
-sh '''mv image5 ~/
+sh '''
  
 mv /var/lib/jenkins/image5 ~/
 docker build -t image5:1.0 .'''

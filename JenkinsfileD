@@ -8,7 +8,9 @@ node('master')
 
     stage('Docker ImageCreation')
            {
-      
+      sh '''cd /var/lib/jenkins/workspace/PipelineWithDocker
+
+'''
 
 sh '''docker build -t image8:1.0 . -f ~/Dockerfile
 '''

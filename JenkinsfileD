@@ -1,0 +1,13 @@
+node('master') 
+     {
+    stage('continuous download')
+           {
+              git branch: 'main', url: 'https://github.com/NagaJayaPraveen/Docker.git'
+           }
+
+    stage('continuous build')
+           {
+             sh '''docker build -t myimage1:1.0 .
+'''
+           }
+     }

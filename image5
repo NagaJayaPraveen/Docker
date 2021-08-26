@@ -3,6 +3,8 @@
 # getting base image centos
 
 FROM centos
+ADD /var/lib/jenkins/workspace/PipelineWithDocker/image5 /root/DockerFiles
+
 
 MAINTAINER nagapraveen <nagajayamadhupraveen@gmail.com>
 

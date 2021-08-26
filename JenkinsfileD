@@ -11,11 +11,11 @@ node('master')
       
 sh '''
  
-cp /var/lib/jenkins/workspace/PipelineWithDocker/image6 ~/DockerFiles/
+cp /var/lib/jenkins/workspace/PipelineWithDocker/image5 ~/DockerFiles/
 '''
 
      sh '''
- 
+      
   docker build -t image5:1.0 .'''
 
            }

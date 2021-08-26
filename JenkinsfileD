@@ -9,9 +9,10 @@ node('master')
     stage('continuous build')
            {
       
-  sh '''
+sh '''
  
-mv im* ~/DockerFiles/'''
+cp /var/lib/jenkins/workspace/PipelineWithDocker/image6 ~/DockerFiles/
+'''
 
      sh '''
  

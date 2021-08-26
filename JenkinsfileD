@@ -6,17 +6,11 @@ node('master')
 
            }
 
-    stage('continuous build')
+    stage('Docker ImageCreation')
            {
       
-sh '''
- 
-cp /var/lib/jenkins/workspace/PipelineWithDocker/image5 ~/DockerFiles/
+
+sh '''docker build -t image6:1.0 . -f ~/Dockerfile
 '''
-
-     sh '''
-      
-  docker build -t image5:1.0 .'''
-
            }
      }

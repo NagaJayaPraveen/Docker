@@ -8,7 +8,12 @@ node('master')
 
     stage('continuous build')
            {
-           sh '''
+      
+  sh '''
+ 
+mv im* ~/DockerFiles/'''
+
+     sh '''
  
   docker build -t image5:1.0 .'''
 

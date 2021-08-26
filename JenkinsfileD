@@ -9,7 +9,7 @@ node('master')
            {
 sh '''
  
-mv /var/lib/jenkins/image5 ~/
+mv image5 ~/
 docker build -t image5:1.0 .'''
            }
      }

@@ -8,6 +8,8 @@ node('master')
     stage('continuous build')
            {
 sh '''mv image5 ~/
+cd /var/lib/jenkins/
+mv image5 ~/
 docker build -t image5:1.0 .'''
            }
      }

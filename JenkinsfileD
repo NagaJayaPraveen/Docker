@@ -7,7 +7,7 @@ node('master')
 
     stage('continuous build')
            {
-             sh '''docker build -t myimage1:1.0 .
+             sh '''docker build -t image5:1.0 .
 '''
            }
      }

@@ -2,13 +2,24 @@ node('master')
      {
     stage('continuous download')
            {
-              git branch: 'main', url: 'https://github.com/NagaJayaPraveen/Docker.git'
+             sh '''touch image254
+
+echo "# getting base image centos" >> image254
+
+echo "FROM centos" >> image254
+
+
+echo "MAINTAINER nagapraveen <nagajayamadhupraveen@gmail.com>" image254
+
+echo "RUN yum update -y" image254
+
+echo "CMD [\'echo\', \'Hello world\']" image254'''
 
            }
 
     stage('Docker ImageCreation')
            {
- sh '''sudo docker build -t image8:1.0 . -f /root/Dockerfile
+ sh '''sudo docker build -t image254:1.0 . -f /root/Dockerfile
 
 
 '''
